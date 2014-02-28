@@ -86,6 +86,10 @@
     //
     
     NSArray * arr = [sections allKeys];
+    arr = [arr sortedArrayWithOptions:0 usingComparator:^(NSString* obj1, NSString* obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
     NSString * titleSec = @"" ;
     if (section!=0) {
         titleSec = [arr objectAtIndex:section-1];
@@ -100,6 +104,10 @@
     NSInteger cont = 0;
     
     NSArray * arr = [sections allKeys];
+    arr = [arr sortedArrayWithOptions:0 usingComparator:^(NSString* obj1, NSString* obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
     NSString * titleSec = @"" ;
     if (section!=0) {
         titleSec = [arr objectAtIndex:section-1];
@@ -119,8 +127,11 @@
         reuseIdentifier:@"idCelula"];
     //TODO fazer if da celula
     
-    
     NSArray * arr = [sections allKeys];
+    arr = [arr sortedArrayWithOptions:0 usingComparator:^(NSString* obj1, NSString* obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
     NSString * titleSec = @"" ;
     if (indexPath.section!=0) {
         titleSec = [arr objectAtIndex:indexPath.section-1];
@@ -182,6 +193,10 @@
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSArray * arr = [sections allKeys];
+    arr = [arr sortedArrayWithOptions:0 usingComparator:^(NSString* obj1, NSString* obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
     NSString * titleSec = @"" ;
     if (indexPath.section!=0) {
         titleSec = [arr objectAtIndex:indexPath.section-1];

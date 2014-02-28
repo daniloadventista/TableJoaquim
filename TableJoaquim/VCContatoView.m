@@ -64,9 +64,10 @@
 - (IBAction)editarContato:(id)sender{
     
 //    alterarContato passado para classe
+    //fazendo scrolling
     self.contatoEditando.contatoEdit = self.contatoEdit;
     self.contatoEditando.title = [NSString stringWithFormat: @"Editar: %@" ,self.contatoEdit.nome];
-    
+
     [self.navigationController
      pushViewController:self.contatoEditando
      animated:YES];

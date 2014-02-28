@@ -25,11 +25,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *tlP;
 @property (weak, nonatomic) IBOutlet UITextField *end;
 @property (weak, nonatomic) Contato *contatoEdit;
+@property (weak, nonatomic) IBOutlet UITextField *tlSecundario;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollPhones;
+//variaveis de adicao de telefones
+@property (strong, nonatomic)  NSMutableArray *telefones;
+- (IBAction)addTelefone:(id)sender;
+@property int incrementoBotao;
+@property int numTelsSecundarios;
+@property int telefoneTemp;
 
 //variaveis de controle de imagens
 @property (weak, nonatomic) IBOutlet UIImageView *uiImageVsh;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *uiTapGRImage;
-- (IBAction)UITapImage:(id)sender;
+//- (IBAction)UITapImage:(id)sender;
 @property BOOL newMedia;
 - (IBAction)useCamera:(id)sender;
 - (IBAction)useCameraRoll:(id)sender;

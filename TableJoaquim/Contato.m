@@ -24,6 +24,8 @@
         celular = celularE;
         endereco = enderecoE;
         img = nil;
+        telefones = [[NSMutableArray alloc]init];
+        
     }
     return self;
 }

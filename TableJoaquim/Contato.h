@@ -17,6 +17,7 @@
     int celular;
     NSString *endereco;
     UIImage *img;
+    NSMutableArray *telefones;
 }
 @property NSString *nome;
 @property NSString *sobreNome;
